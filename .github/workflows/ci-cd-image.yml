@@ -5,7 +5,7 @@ env:
   IMAGE_NAME: "${{ secrets.DOCKER_USER }}/nginx-k3d"
 jobs:
   build-push-image:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
